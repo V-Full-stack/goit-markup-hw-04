@@ -142,6 +142,14 @@ img {
   align-items: center;
 }
 
+/* width: 48px;
+height: 4px;
+left: 453px;
+top: 76px;
+
+background: #2196f3;
+border-radius: 2px; */
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -207,11 +215,19 @@ img {
 }
 
 .top-down-contact {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+}
+
+.address-icon,
+.tel-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-link:not(:last-child) {
@@ -422,11 +438,11 @@ footer .logo {
   color: var(--alt-title-color);
 }
 
-.soc-container {
+.social-icons {
   display: flex;
   list-style: none;
 }
 
-.social-item {
+.social-icons-item {
   margin-left: 10px;
 }
