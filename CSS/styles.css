@@ -384,6 +384,11 @@ color: #2196F3; */
   color: #ffffff;
 }
 
+.footer-twitter {
+  background: var(--blue-color);
+  color: var(--secondary-title-color);
+}
+
 .social-icons-link:hover,
 .social-icons-link:focus {
   color: var(--primary-beackround-color);
@@ -447,6 +452,8 @@ color: #2196F3; */
 .customer-list {
   display: flex;
   margin: -15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .customer-item {
@@ -454,7 +461,10 @@ color: #2196F3; */
 }
 
 .customers-link-list {
-  padding: 16px 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -542,6 +552,12 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* присоединяйтесь */
+
+.social-title-box {
+  margin-left: 70px;
+}
+
 .social-title {
   margin-bottom: 20px;
   font-family: Roboto;
@@ -552,8 +568,4 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
-}
-
-.social-title-box {
-  margin-left: 70px;
 }

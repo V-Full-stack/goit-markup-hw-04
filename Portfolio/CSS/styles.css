@@ -50,7 +50,6 @@ ul {
 .body {
   font-family: var(--main-font);
   width: 1200px;
-  font-family: var(--main-font);
   font-size: 16px;
   line-height: 18.7;
   letter-spacing: 0.03em;
@@ -85,11 +84,6 @@ img {
 .link:focus,
 .current {
   color: var(--accent-color);
-}
-
-.list {
-  list-style: none;
-  text-decoration: none;
 }
 
 /* .button-item:not(:last-child) {
@@ -191,21 +185,19 @@ border-radius: 2px; */
   color: #2196f3;
 }
 
-.list {
-  display: flex;
-  list-style: none;
-  align-items: center;
-
-  text-decoration: none;
-  list-style: none;
-}
-
 .header-list-nav {
   margin-left: 94px;
 }
 
-.header-list {
+.list {
   display: flex;
+  list-style: none;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header-list {
   margin-left: auto;
 }
 
@@ -215,6 +207,9 @@ border-radius: 2px; */
 }
 
 .top-down-contact {
+  font-family: var(--main-font);
+  font-style: normal;
+
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -347,6 +342,16 @@ element-style {
   /* display: block; */
 }
 
+.container-portfolio-item:hover,
+.container-portfolio-item:focus {
+  background: var(--alt-title-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
 .item-title {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
@@ -451,4 +456,47 @@ footer .logo {
 
 .social-icons-item {
   margin-left: 10px;
+}
+
+.social-icons {
+  margin-left: -10px;
+  display: inline-flex;
+}
+
+.socials-icons-item {
+  margin-left: 10px;
+}
+
+.social-icons-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons-svg {
+  fill: currentColor;
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons-link-footer {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  color: var(--alt-title-color);
+  background-color: var(--accent-color);
+}
+
+.footer-twitter {
+  background: var(--accent-color);
+  color: var(--alt-title-color);
 }
