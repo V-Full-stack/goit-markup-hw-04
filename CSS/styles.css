@@ -569,3 +569,10 @@ footer {
   text-transform: uppercase;
   color: var(--secondary-title-color);
 }
+
+/* INPUT */
+
+.footer-input {
+  margin-left: auto;
+  margin-bottom: 20px;
+}
