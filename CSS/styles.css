@@ -354,6 +354,9 @@ color: #2196F3; */
 
 .social-icons {
   margin-left: -10px;
+  margin-top: 16px;
+  display: flex;
+  list-style: none;
   display: inline-flex;
 }
 
